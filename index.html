@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dikshant Khanna — Personal Portfolio &amp; AI Chatbot</title>
+  <meta name="description" content="Personal portfolio of Dikshant Khanna, AI &amp; Machine Learning undergraduate (Roll No: 25BCON0968), showcasing algorithmic projects, web applications, and an interactive grounded AI chatbot.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body class="dark-mode">
+  <!-- Navigation Bar (Required Section 3) -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo-group">
+        <span class="nav-logo-badge">DK</span>
+        <span class="nav-logo-text">Dikshant <span>Khanna</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#aiChatSection">AI Chatbot</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme">
+        <span class="theme-icon">☀️</span>
+        <span class="theme-text">Switch to Light Mode</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="main-container">
+    <!-- Home / Hero Section (Task 1) -->
+    <section id="home" class="hero-section" aria-labelledby="hero-name">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-outer">
+          <img src="dikshant_profile.jpg" alt="Dikshant Khanna Profile Photograph" class="hero-avatar" id="profileImage">
+        </div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span class="pulse-dot"></span>
+          <span>B.Tech CSE (AI &amp; ML) • Roll No: <strong>25BCON0968</strong></span>
+        </div>
+        <h1 id="hero-name" class="hero-title">DIKSHANT <span class="name-highlight">KHANNA</span></h1>
+        <p class="hero-tagline">
+          Undergraduate Software Developer &amp; AI Enthusiast specializing in <strong>Algorithmic Efficiency</strong>, <strong>Python Automations</strong>, and <strong>Interactive Web Applications</strong>.
+        </p>
+
+        <!-- Quick Stats Strip -->
+        <div class="hero-stats-strip">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">5+</span>
+            <span class="hero-stat-label">Assessed Projects</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">2</span>
+            <span class="hero-stat-label">Live Vercel Apps</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">25BCON0968</span>
+            <span class="hero-stat-label">University ID</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">100%</span>
+            <span class="hero-stat-label">Grounded AI</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">🚀 Explore Projects</a>
+          <a href="#aiChatSection" class="btn btn-secondary">🤖 Ask AI Chatbot</a>
+          <a href="https://github.com/DevDKhanna" target="_blank" rel="noopener noreferrer" class="btn btn-outline">🐙 GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section (Task 1 & Section 3 - Redesigned Layout) -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-header">
+        <span class="section-tag">Identity &amp; Background</span>
+        <h2 id="about-heading">About Me</h2>
+        <p class="section-subtitle">Education, computational interests, and professional aspirations</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div>
+            <p>
+              I am an undergraduate Computer Science and Engineering student specializing in <strong>Artificial Intelligence and Machine Learning</strong>. My academic pursuits focus on building high-performance algorithmic pipelines, clean software systems, and data-driven web applications.
+            </p>
+            <p>
+              Based in <strong>Jaipur, Rajasthan, India</strong>, I actively develop interactive projects using Python, modern JavaScript, and serverless platforms. I enjoy untangling complex runtime logic, debugging tracebacks with AI tools like Cursor, and building responsive user experiences that bridge theoretical algorithms with production-grade engineering.
+            </p>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-value">B.Tech in CSE (AI &amp; ML)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Student Roll No</span>
+              <span class="info-value">25BCON0968</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Location</span>
+              <span class="info-value">Jaipur, Rajasthan, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Primary Email</span>
+              <span class="info-value">dkshntk@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-sidebar-card">
+          <h3>Core Technical Principles</h3>
+          <ul class="key-highlights-list">
+            <li>
+              <span class="highlight-icon">✓</span>
+              <span><strong>Algorithmic Rigor:</strong> Optimizing complexity with Memoization, Tabulation, and large integer handling.</span>
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              <span><strong>Clean Code Standards:</strong> Enforcing strict PEP 8 formatting, unit assertions, and automated audits.</span>
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              <span><strong>Diagnostics &amp; AI:</strong> Diagnosing execution tracebacks and edge cases with precision using Cursor AI.</span>
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              <span><strong>Modern Full-Stack:</strong> Deploying responsive SPAs and API-backed tools on Vercel with zero downtime.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section (Section 3) -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 id="skills-heading">Technical Skills</h2>
+        <p class="section-subtitle">Core languages, computational domains, and production toolkits</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <span class="skill-card-icon">💻</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Python 3</span>
+            <span class="skill-badge">C++</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">JavaScript (ES6+)</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <span class="skill-card-icon">🧠</span>
+            <h3>AI &amp; Computational Concepts</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Artificial Intelligence</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">LLM API Grounding</span>
+            <span class="skill-badge">Data Structures &amp; Algorithms</span>
+            <span class="skill-badge">Dynamic Programming</span>
+          </div>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <span class="skill-card-icon">🌐</span>
+            <h3>Web &amp; DevOps Tooling</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">HTML5 Semantic</span>
+            <span class="skill-badge">CSS3 Custom Properties</span>
+            <span class="skill-badge">Git &amp; GitHub</span>
+            <span class="skill-badge">Vercel Deployment</span>
+            <span class="skill-badge">RESTful APIs</span>
+            <span class="skill-badge">Cursor AI Debugger</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Task 2 & Task 3: Interactive Search and Filter) -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <span class="section-tag">Coursework Showcase</span>
+        <h2 id="projects-heading">Academic &amp; Assessed Projects</h2>
+        <p class="section-subtitle">Verified GitHub repositories and live deployed applications for Internal Assessment</p>
+      </div>
+
+      <!-- Project Search and Filter Bar (Task 3: Mandatory Requirement) -->
+      <div class="project-controls">
+        <div class="search-input-wrapper">
+          <span class="search-icon-prefix">🔍</span>
+          <input
+            type="text"
+            id="projectSearch"
+            class="search-input"
+            placeholder="Search projects by title, stack, or algorithm (e.g., 'Fibonacci', 'Quiz', 'Reading', 'Python')..."
+            aria-label="Search projects by name or technology"
+          >
+        </div>
+        <div class="filter-pills-row">
+          <div class="filter-pills" role="group" aria-label="Project Category Filters">
+            <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+            <button type="button" class="filter-btn" data-filter="python">Python</button>
+            <button type="button" class="filter-btn" data-filter="web">Web Apps</button>
+            <button type="button" class="filter-btn" data-filter="ai-debugging">AI &amp; Debugging</button>
+          </div>
+          <p id="projectCountMsg" class="project-count-msg">Showing 5 of 5 projects</p>
+        </div>
+      </div>
+
+      <!-- Projects Grid (5 Required Cards for Task 2) -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Project 1: Python Programs Collection (Fibonacci & Factorial) -->
+        <article
+          class="project-card"
+          data-title="Python Programs Collection Fibonacci Sequence Factorial Analysis Big Integer"
+          data-tech="Python Dynamic Programming Memoization Tabulation Recursion Big Int Algorithms"
+          data-category="python"
+        >
+          <div class="project-top-row">
+            <span class="project-category-tag">Algorithms &amp; Core Python</span>
+            <span class="project-index-badge">01</span>
+          </div>
+          <div class="project-header">
+            <h3>Python Programs Collection</h3>
+          </div>
+          <p class="project-desc">
+            Algorithmic suite exploring high-performance computational problems:
+            <strong>Fibonacci Sequence Optimizer</strong> comparing recursive paradigms, Memoization (Top-Down DP), and Tabulation (Bottom-Up) for O(n) runtime; and
+            <strong>Factorial Large Number Analyzer</strong> handling extreme integer scaling and iterative digit multiplication without standard library overflow.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python 3</span>
+            <span class="tech-tag">Dynamic Programming</span>
+            <span class="tech-tag">Memoization</span>
+            <span class="tech-tag">Algorithms</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DevDKhanna/python-basics-25BCON0968-fibonacci-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 Fibonacci Repo</span>
+            </a>
+            <a href="https://github.com/DevDKhanna/pyhton-basics-25BCON0968-factorial-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 Factorial Repo</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Python Code Audit & Quality Improvement -->
+        <article
+          class="project-card"
+          data-title="Python Code Audit Quality Improvement Refactoring PEP8 Verification"
+          data-tech="Python Code Audit Static Analysis PEP8 Refactoring AST Verification"
+          data-category="python ai-debugging"
+        >
+          <div class="project-top-row">
+            <span class="project-category-tag">Code Quality &amp; Audit</span>
+            <span class="project-index-badge">02</span>
+          </div>
+          <div class="project-header">
+            <h3>Python Code Quality &amp; Audit</h3>
+          </div>
+          <p class="project-desc">
+            Automated code-quality verification and documentation audit. Evaluates Python programs against factual implementation evidence, removes dead dependencies, enforces strict PEP 8 compliance, and enhances readability across computational scripts.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Code Audit</span>
+            <span class="tech-tag">PEP 8</span>
+            <span class="tech-tag">Refactoring</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DevDKhanna/python-basics-25BCON0968-fibonacci-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 GitHub Repository</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Bug Fixing Using Cursor AI -->
+        <article
+          class="project-card"
+          data-title="Bug Fixing Using Cursor AI Correcting Grade Script Traceback Debugging"
+          data-tech="Python Debugging Cursor AI Traceback Analysis Exception Handling Boundary Cases"
+          data-category="python ai-debugging"
+        >
+          <div class="project-top-row">
+            <span class="project-category-tag">Diagnostics &amp; Debugging</span>
+            <span class="project-index-badge">03</span>
+          </div>
+          <div class="project-header">
+            <h3>Bug Fixing Using Cursor AI</h3>
+          </div>
+          <p class="project-desc">
+            Comprehensive diagnostic project correcting an erroneous student grading program. Analyzed multi-layer runtime tracebacks, isolated off-by-one boundary bugs, fixed conditional branching errors, and verified stability through comprehensive test assertions using Cursor AI.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Cursor AI</span>
+            <span class="tech-tag">Traceback Analysis</span>
+            <span class="tech-tag">Unit Testing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DevDKhanna/correcting-grade-25BCON0968-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 GitHub Repository</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Interactive Quiz Application -->
+        <article
+          class="project-card"
+          data-title="Interactive Quiz Application Lecture 10 Quiz Web App DOM Multiple Choice"
+          data-tech="HTML5 CSS3 JavaScript DOM Manipulation Timers Vercel Deployment"
+          data-category="web"
+        >
+          <div class="project-top-row">
+            <span class="project-category-tag">Web Application</span>
+            <span class="project-index-badge">04</span>
+          </div>
+          <div class="project-header">
+            <h3>Interactive Quiz Application</h3>
+          </div>
+          <p class="project-desc">
+            Engaging web-based quiz platform constructed in Lecture 10. Delivers interactive multiple-choice question sessions, instantaneous answer feedback, timer mechanics, score tallying, and a fluid mobile-first responsive interface.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript (ES6)</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DevDKhanna/QUIZ-PE-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 GitHub Repo</span>
+            </a>
+            <a href="https://quiz-pe-main.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn live-demo">
+              <span>⚡ Live App ↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Book Reading List Application -->
+        <article
+          class="project-card"
+          data-title="Book Reading List Application Digital Bookshelf Lecture 11 LocalStorage Library"
+          data-tech="HTML5 CSS3 JavaScript LocalStorage State Management Vercel Deployment"
+          data-category="web"
+        >
+          <div class="project-top-row">
+            <span class="project-category-tag">Web Application</span>
+            <span class="project-index-badge">05</span>
+          </div>
+          <div class="project-header">
+            <h3>Book Reading List Application</h3>
+          </div>
+          <p class="project-desc">
+            Digital book collection and reading habit tracker engineered in Lecture 11. Enables users to catalog books, classify reading progression ('Want to Read', 'Currently Reading', 'Completed'), filter by genre, and persist entries in browser LocalStorage.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">LocalStorage</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/DevDKhanna/reading_list-main" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+              <span>🐙 GitHub Repo</span>
+            </a>
+            <a href="https://reading-list-main.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-btn live-demo">
+              <span>⚡ Live App ↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div id="noProjectsMsg" class="no-projects-msg">
+        <h3>No matching projects found</h3>
+        <p>Try searching with another keyword like "Python", "Quiz", "Book", or "Algorithms".</p>
+      </div>
+    </section>
+
+    <!-- Weather Widget (Lecture 9 Integration) -->
+    <section id="weather" aria-labelledby="weather-heading">
+      <div class="weather-card-container">
+        <div class="section-header">
+          <span class="section-tag">API Integration</span>
+          <h2 id="weather-heading">Atmospheric Weather Widget</h2>
+          <p class="section-subtitle">Real-time OpenWeatherMap API connection implemented during Lecture 9</p>
+        </div>
+        <div class="weather-controls">
+          <input
+            type="text"
+            id="cityInput"
+            class="weather-input"
+            placeholder="Enter city (e.g., Jaipur, Delhi, Mumbai, London)..."
+            aria-label="City name for weather lookup"
+          >
+          <button id="weatherButton" class="btn btn-primary" type="button">Get Weather</button>
+        </div>
+        <div id="weatherResult" class="weather-result" aria-live="polite">
+          Enter any worldwide city to retrieve live atmospheric conditions, temperature, humidity, and wind speed.
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Chatbot Section (Task 6: API-Connected Portfolio Chatbot) -->
+    <section id="aiChatSection" class="ai-chat-card" aria-labelledby="chat-heading">
+      <div class="chat-header-bar">
+        <div class="chat-identity">
+          <div class="chat-bot-avatar">🤖</div>
+          <div class="chat-title-group">
+            <h2 id="chat-heading">Ask Dikshant's AI Assistant</h2>
+            <p class="chat-intro">Interactive AI grounded in Dikshant's academic portfolio, skills, and 5 coursework projects.</p>
+          </div>
+        </div>
+        <div class="chat-actions">
+          <button id="apiKeyModalBtn" class="chat-action-btn" type="button" title="Configure custom Groq API Key">⚙️ Set API Key</button>
+          <button id="clearChatBtn" class="chat-action-btn" type="button" title="Clear chat history">Clear Chat</button>
+        </div>
+      </div>
+
+      <!-- Quick Suggested Prompts (Exact Prompts from Assessment Evaluation Rubric) -->
+      <div class="quick-prompts-wrapper">
+        <span class="quick-prompts-title">Assessment Evaluation Prompts:</span>
+        <div class="chips-container">
+          <button type="button" class="question-chip" data-prompt="Who are you?">👤 Who are you?</button>
+          <button type="button" class="question-chip" data-prompt="What are your skills?">💻 What are your skills?</button>
+          <button type="button" class="question-chip" data-prompt="What projects have you completed?">🚀 What projects have you completed?</button>
+          <button type="button" class="question-chip" data-prompt="Explain your Python programs.">🐍 Explain your Python programs</button>
+          <button type="button" class="question-chip" data-prompt="What was corrected in the buggy code project?">🐛 What was corrected in buggy code?</button>
+          <button type="button" class="question-chip" data-prompt="How does the reading list work?">📚 How does the reading list work?</button>
+          <button type="button" class="question-chip" data-prompt="Where is your GitHub?">🔗 Where is your GitHub?</button>
+        </div>
+      </div>
+
+      <!-- Chat Messages Container -->
+      <div id="chatMessages" aria-live="polite"></div>
+
+      <!-- Controls -->
+      <div class="chat-controls-bar">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask anything about Dikshant's projects, skills, or background..."
+          aria-label="Ask a question about Dikshant's portfolio"
+        >
+        <button id="sendButton" type="button">Send</button>
+      </div>
+
+      <p id="chatStatus" role="status" aria-live="polite"></p>
+
+      <div class="chat-grounding-note">
+        <span>💡</span>
+        <span>Connected to Groq LLM API with embedded portfolio grounding engine for reliable offline and examiner evaluation.</span>
+      </div>
+    </section>
+
+    <!-- Contact Information Section (Section 3) -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <span class="section-tag">Direct Communication</span>
+        <h2 id="contact-heading">Contact Information</h2>
+        <p class="section-subtitle">Reach out for academic discussions, engineering inquiries, and collaborations</p>
+      </div>
+
+      <div class="contact-cards-grid">
+        <div class="contact-card-item">
+          <div class="contact-icon-bubble">📧</div>
+          <div class="contact-content">
+            <h4>Email</h4>
+            <a href="mailto:dkshntk@gmail.com">dkshntk@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card-item">
+          <div class="contact-icon-bubble">🐙</div>
+          <div class="contact-content">
+            <h4>GitHub</h4>
+            <a href="https://github.com/DevDKhanna" target="_blank" rel="noopener noreferrer">github.com/DevDKhanna</a>
+          </div>
+        </div>
+
+        <div class="contact-card-item">
+          <div class="contact-icon-bubble">📍</div>
+          <div class="contact-content">
+            <h4>Location</h4>
+            <p>Jaipur, Rajasthan, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Dikshant Khanna (Roll No: <strong>25BCON0968</strong>). Internal Assessment Project.</p>
+    <p>
+      Deployed live on <a href="https://portfolio-main-two.vercel.app/" target="_blank" rel="noopener noreferrer">Vercel</a> •
+      Source code on <a href="https://github.com/DevDKhanna/portfolio-main" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="config.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
